@@ -1,0 +1,88 @@
+{
+  "bundle": "nuclear-rc1-x86_64",
+  "source_commit": "debf9c81af2ff74f44f3ec5bc79bbd05e7dfcd33",
+  "base_integration": "fba9afa",
+  "apk": {
+    "path": "nuclear-rc1-x86_64.apk",
+    "bytes": 54683194,
+    "sha256": "896a877ebceed4b9030fdeb3d3712121876905ead2c563c14eb0b1909711db35"
+  },
+  "models": [
+    {
+      "path": "models/speech/asr/encoder.int8.onnx",
+      "bytes": 236314144,
+      "sha256": "b51efc61e3c0037ad1cb804079975468de3d175324fe8323aef5be4f5c6a38a1",
+      "target": "speech/asr/encoder.int8.onnx",
+      "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19/encoder.int8.onnx",
+      "license": "MIT"
+    },
+    {
+      "path": "models/speech/asr/decoder.onnx",
+      "bytes": 3331651,
+      "sha256": "208e24cc150fb0ebca3fab169502796daa12e0255dcf7b4acf65015c436e9f76",
+      "target": "speech/asr/decoder.onnx",
+      "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19/decoder.onnx",
+      "license": "MIT"
+    },
+    {
+      "path": "models/speech/asr/joiner.onnx",
+      "bytes": 1440448,
+      "sha256": "4b02eced18e033fc5173e6c47b6ab166b5efea8d35c3f33a6755ff0d622fb5b0",
+      "target": "speech/asr/joiner.onnx",
+      "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19/joiner.onnx",
+      "license": "MIT"
+    },
+    {
+      "path": "models/speech/asr/tokens.txt",
+      "bytes": 196,
+      "sha256": "17cc514451bcceac9c280068c71502f8448f99e9fb1456b8d0761651fd0392f2",
+      "target": "speech/asr/tokens.txt",
+      "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19.tar.bz2",
+      "archive_member": "sherpa-onnx-nemo-transducer-giga-am-v2-russian-2025-04-19/tokens.txt",
+      "license": "MIT"
+    },
+    {
+      "path": "models/speech/diar/model.onnx",
+      "bytes": 5992913,
+      "sha256": "220ad67ca923bef2fa91f2390c786097bf305bceb5e261d4af67b38e938e1079",
+      "target": "speech/diar/model.onnx",
+      "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-segmentation-models/sherpa-onnx-pyannote-segmentation-3-0.tar.bz2",
+      "archive_member": "sherpa-onnx-pyannote-segmentation-3-0/model.onnx",
+      "license": "MIT"
+    },
+    {
+      "path": "models/speech/diar/3dspeaker.onnx",
+      "bytes": 39593761,
+      "sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "target": "speech/diar/3dspeaker.onnx",
+      "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx",
+      "archive_member": null,
+      "license": "Apache-2.0 (upstream model card)"
+    },
+    {
+      "path": "models/llm/Qwen3-0.6B-Q8_0.gguf",
+      "bytes": 639446688,
+      "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+      "target": "llm/Qwen3-0.6B-Q8_0.gguf",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF/resolve/23749fefcc72300e3a2ad315e1317431b06b590a/Qwen3-0.6B-Q8_0.gguf",
+      "revision": "23749fefcc72300e3a2ad315e1317431b06b590a",
+      "license": "Apache-2.0"
+    }
+  ],
+  "apk_signing": "Android debug key; run-as offline demo installer",
+  "runtime": {
+    "sherpa_release": "v2.0.1",
+    "sherpa_commit": "af2d8d81dbfa61c4cea4c568da78f3982edca005",
+    "llama_commit": "80d2c0c2c56e4a1bbf74be98f64b99927bf230bc"
+  },
+  "requirements": {
+    "abi": "x86_64",
+    "min_sdk": 26,
+    "tested_sdk": 35,
+    "ram_mib": 4096,
+    "vcpu": 2
+  }
+}
