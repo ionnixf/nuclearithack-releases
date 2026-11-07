@@ -1,6 +1,12 @@
-# Нейро-стенографист — автономный комплект Android
+# Нейро-стенографист — автономный комплект Android (RC1)
 
-[Скачать RC1: APK + все speech/LLM-веса + инструкция](https://github.com/ionnixf/nuclearithack-releases/releases/tag/v0.2.0-rc1)
+- [**Скачать комплект APK + модели**](https://github.com/ionnixf/nuclearithack-releases/releases/download/v0.2.0-rc1/nuclear-rc1-x86_64.tar.gz) (`nuclear-rc1-x86_64.tar.gz`, 847 191 242 байт, SHA-256: `74dc4f47f4aca520310a374d3901d5cd65ac1919b794893728f2518b81577129`)
+- [**Посмотреть демонстрацию**](https://github.com/ionnixf/nuclearithack-releases/releases/download/v0.2.0-rc1/rc1-demo.mp4) (`rc1-demo.mp4`, 5 494 957 байт, SHA-256: `6baf8ac6bed878d7192cbbcd1c3c5a70451051e8d27f3b5d16790c513d6d0c68`)
+- [**Скачать исходники приложения**](https://github.com/ionnixf/nuclearithack-releases/releases/download/v0.2.0-rc1/nuclear-rc1-source.tar.gz) (`nuclear-rc1-source.tar.gz`, 177 450 байт, SHA-256: `ecb69a2e6d6f677538b39d0e4483abb1900a6446c073907e709908983c760ebe`)
+
+> **Важно:** для установки и проверки на эмуляторе нужен **полный архив** `nuclear-rc1-x86_64.tar.gz` (APK + все 7 speech/LLM-моделей + `install.py` + контрольный WAV). Автоматический **GitHub Source code (zip / tar.gz)** самого репозитория доставки (`nuclearithack-releases`) содержит только файлы доставки и **не содержит Android-проект** — полный исходный код Android-приложения выложен отдельным архивом `nuclear-rc1-source.tar.gz`.
+
+Страница релиза со всеми вложениями: <https://github.com/ionnixf/nuclearithack-releases/releases/tag/v0.2.0-rc1>
 
 Android x86_64, проверенный AVD: API 35, 4096 МБ RAM, 2 vCPU.
 Полный pipeline на устройстве: WAV → automatic diarization → GigaAM ASR →
